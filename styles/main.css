@@ -175,3 +175,84 @@ select {
 	cursor: pointer;
 	margin-left: 5px;
 }
+/* Background image */
+body {
+    position: relative;
+    background: url('../assets/backgrounds/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}
+
+/* Month scroller */
+.month-scroller {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.month-scroller button {
+    padding: 25px 30px;
+    border: 10px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+/* Quick access icons */
+.quick-access {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+.icon-box:hover::after {
+    content: attr(title);
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.icon {
+    font-size: 24px;
+}

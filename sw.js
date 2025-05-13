@@ -1,11 +1,12 @@
 const CACHE_NAME = 'multi-calendar-v1';
 const PRECACHE_URLS = [
   '/',
-  '/index.html',
-  '/styles/main.css',
-  '/scripts/main.js',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/assets/icons/ios/icon-192.png',
+  '/assets/icons/android/icon-192.png',
+  '/assets/icons/android/icon-512.png',
+  '/assets/backgrounds/background.jpg',
+  '/assets/screenshots/screenshot_01.png',
+  '/assets/screenshots/screenshot_02.png'
 ];
 
 self.addEventListener('install', event => {

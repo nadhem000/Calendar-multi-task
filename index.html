@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Multi-Calendar with Notes</title>
 		<link rel="stylesheet" href="styles/main.css">
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#4CAF50">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Multi-Calendar">
-<link rel="apple-touch-icon" href="/icons/icon-192.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="theme-color" content="#4CAF50">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Multi-Calendar">
+		<link rel="apple-touch-icon" href="/assets/icons/ios/icon-192.png">
 	</head>
 	<body>
 		<h1 data-translate="Calendar" data-category="calendar">Multi-Calendar with Notes</h1>
@@ -42,11 +42,37 @@
 				<select id="month"></select>
 			</div>
 		</div>
+		<div>
+			<div class="month-scroller">
+				<label for="year" data-translate="Year" data-category="calendar">Year:</label>
+				<button id="prevYear">❮</button>
+				<label id="year"></label>
+				<button id="nextYear">❯</button>
+				<label for="month" data-translate="Month" data-category="calendar">Month:</label>
+				<div class="month-scroller">
+					<button id="prevMonth">❮</button>
+					<label id="month"></label>
+					<button id="nextMonth">❯</button>
+				</div>
+			</div>
+		</div>
 		<!-- Calendar Grid -->
 		<div id="calendar"></div>
 		<!-- Popup for notes -->
 		<div id="popup">
 			<div id="popupContent"></div>
+		</div>
+		<!-- Add right-side icons -->
+		<div class="quick-access">
+			<div class="icon-box" title="Plate">
+				<span class="icon">🥘</span>
+			</div>
+			<div class="icon-box" title="Mechanics">
+				<span class="icon">🔧</span>
+			</div>
+			<div class="icon-box" title="Health">
+				<span class="icon">❤️</span>
+			</div>
 		</div>
 		<script src="scripts/main.js"></script>
 	</body>

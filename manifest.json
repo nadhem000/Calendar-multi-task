@@ -27,16 +27,30 @@
 	"prefer_related_applications": false,
 	"icons": [
 		{
-			"src": "icons/icon-192.png",
-			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "icons/icon-512.png",
+			"src": "assets/icons/android/icon-512.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
+		},
+		{
+			"src": "assets/icons/android/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "assets/screenshots/screenshot_01.png",
+			"sizes": "1128x536",
+			"type": "image/png",
+			"platform": "wide"
+		},
+		{
+			"src": "assets/screenshots/screenshot_02.png",
+			"sizes": "705x416",
+			"type": "image/png",
+			"platform": "wide"
 		}
 	]
 }

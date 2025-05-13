@@ -547,6 +547,28 @@ document.getElementById('languageSelect').addEventListener('change', (e) => {
 	currentLanguage = e.target.value;
 	updateLanguage();
 });
+// Add month navigation event listeners
+document.getElementById('prevMonth').addEventListener('click', () => {
+    const currentMonth = parseInt(monthSelect.value);
+    if (currentMonth > 0) {
+        monthSelect.value = currentMonth - 1;
+    } else {
+        monthSelect.value = 11;
+        yearSelect.value = parseInt(yearSelect.value) - 1;
+    }
+    updateCalendarView();
+});
+
+document.getElementById('nextMonth').addEventListener('click', () => {
+    const currentMonth = parseInt(monthSelect.value);
+    if (currentMonth < 11) {
+        monthSelect.value = currentMonth + 1;
+    } else {
+        monthSelect.value = 0;
+        yearSelect.value = parseInt(yearSelect.value) + 1;
+    }
+    updateCalendarView();
+});
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
