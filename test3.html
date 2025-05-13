@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Multi-Calendar with Notes</title>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<h1 data-translate="Calendar" data-category="calendar">Multi-Calendar with Notes</h1>
+		<!-- Language Selector -->
+		<div id="languageSelectorContainer">
+			<label for="languageSelect" data-translate="Select Language" data-category="calendar">Language:</label>
+			<select id="languageSelect">
+				<option value="en">English</option>
+				<option value="ar">Arabic</option>
+				<option value="amz">Amaźigh</option>
+				<option value="cop">Coptic</option>
+			</select>
+		</div>
+		<!-- Calendar Controls -->
+		<div class="calendar-controls">
+			<div>
+				<label for="calendarType" data-translate="Calendar" data-category="calendar">Calendar:</label>
+				<select id="calendarType">
+					<option value="gregorian" data-translate="Gregorian" data-category="calendar">Gregorian</option>
+					<option value="islamic" data-translate="Islamic" data-category="calendar">Islamic</option>
+					<option value="coptic" data-translate="Coptic" data-category="calendar">Coptic</option>
+				</select>
+			</div>
+			<div>
+				<label for="year" data-translate="Year" data-category="calendar">Year:</label>
+				<select id="year"></select>
+			</div>
+			<div>
+				<label for="month" data-translate="Month" data-category="calendar">Month:</label>
+				<select id="month"></select>
+			</div>
+		</div>
+		<!-- Calendar Grid -->
+		<div id="calendar"></div>
+		<!-- Popup for notes -->
+		<div id="popup">
+			<div id="popupContent"></div>
+		</div>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
