@@ -46,12 +46,12 @@
 			<div class="month-scroller">
 				<label for="year" data-translate="Year" data-category="calendar">Year:</label>
 				<button id="prevYear">❮</button>
-				<label id="year"></label>
+				<label id="displayYear"></label>
 				<button id="nextYear">❯</button>
 				<label for="month" data-translate="Month" data-category="calendar">Month:</label>
 				<div class="month-scroller">
 					<button id="prevMonth">❮</button>
-					<label id="month"></label>
+					<label id="displayMonth"></label>
 					<button id="nextMonth">❯</button>
 				</div>
 			</div>
@@ -64,16 +64,31 @@
 		</div>
 		<!-- Add right-side icons -->
 		<div class="quick-access">
-			<div class="icon-box" title="Plate">
-				<span class="icon">🥘</span>
+			<div class="icon-box" role="button" title="Plate" aria-labelledby="plate-label">
+				<span class="icon" aria-hidden="true">🥘</span>
+				<span id="plate-label" hidden>Plate</span>
 			</div>
-			<div class="icon-box" title="Mechanics">
-				<span class="icon">🔧</span>
+			<div class="icon-box" role="button" title="Mechanics" aria-labelledby="mechanics-label">
+				<span class="icon" aria-hidden="true">🔧</span>
+				<span id="mechanics-label" hidden>Mechanics</span>
 			</div>
-			<div class="icon-box" title="Health">
-				<span class="icon">❤️</span>
+			<div class="icon-box" role="button" title="Health" aria-labelledby="health-label">
+				<span class="icon" aria-hidden="true">❤️</span>
+				<span id="Health-label" hidden>Health</span>
 			</div>
 		</div>
-		<script src="scripts/main.js"></script>
-	</body>
+		<div id="additional-categories" class="hidden"></div>
+		<!-- Return to Today Date -->
+		<button class="return-today-btn" data-translate="ReturnToday" data-category="calendar">Return to Today</button>
+		<!-- Add install button -->
+		<button id="installButton" class="install-btn" data-translate="Install" aria-label="Install app" data-category="calendar">📲 Install App</button>
+	</div>
+	<!-- Footer Section -->
+	<div class="footer-note">
+		coded by Mejri Ziad<br>
+		05-2025 version 0.0.2<br>
+		under developpement
+	</div>
+	<script src="scripts/main.js"></script>
+</body>
 </html>

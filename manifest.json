@@ -20,10 +20,10 @@
 	"launch_handler": {
 		"client_mode": "auto"
 	},
-	"categories": ["games", "education", "kids"],
+	"categories": ["productivity", "education", "kids"],
 	"dir": "auto",
 	"iarc_rating_id": "e58c174a-81d2-5c3c-32cc-34b8de4a52e9",
-	"lang": "ar",
+	"lang": "en",
 	"prefer_related_applications": false,
 	"icons": [
 		{
@@ -50,7 +50,7 @@
 			"src": "assets/screenshots/screenshot_02.png",
 			"sizes": "705x416",
 			"type": "image/png",
-			"platform": "wide"
+			"platform": "narrow"
 		}
 	]
 }

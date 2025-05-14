@@ -72,6 +72,8 @@ select {
 	margin: 2px 0;
 	padding: 1px 3px;
 	border-radius: 3px;
+  color: rgba(0,0,0,0.8); /* Ensure readability */
+  font-weight: 500;
 }
 #popup {
 	position: fixed;
@@ -202,8 +204,8 @@ body::after {
 }
 
 .month-scroller button {
-    padding: 25px 30px;
-    border: 10px solid #ddd;
+    padding: 8px 12px;
+    border: 2px solid #ddd;
     border-radius: 8px;
     background: white;
     cursor: pointer;
@@ -255,4 +257,53 @@ body::after {
 
 .icon {
     font-size: 24px;
+}
+/* Style for Return to Today Button */
+.return-today-btn {
+    margin-top: 20px;
+    width: auto; /* Adjust width as needed */
+    align-self: center; /* Center the button within the flex container */
+}
+.install-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	padding: 10px 20px;
+	background: #3498db;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 1000;
+	font-family: inherit;
+	transition: background 0.3s ease;
+	display: none; /* Hidden by default */
+}
+
+.install-btn:hover {
+	background: #2980b9;
+}
+/* Footer Styles */
+.footer-note {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 0.8em;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%; /* Ensure footer takes full width */
+}
+/* Utility classes */
+.hidden {
+	display: none !important;
+}
+[dir="rtl"] .quick-access {
+  right: auto;
+  left: 20px;
+}
+
+[dir="rtl"] .icon-box:hover::after {
+  right: auto;
+  left: 60px;
 }
